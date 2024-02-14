@@ -20,11 +20,6 @@ public class Project {
         return bidList;
     }
 
-    public Project addBidList(Bid bid) {
-        this.bidList.add(bid);
-        return this;
-    }
-
     public int getId() {
         return id;
     }
