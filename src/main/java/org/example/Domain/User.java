@@ -1,29 +1,17 @@
 package org.example.Domain;
 
 
-import org.bson.Document;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class User {
     private String email;
     private String password;
     private String firstName;
     private String lastName;
-    private List<Document> projectList;
 
     public User(String email, String password, String firstName, String lastName) {
         this.email = email;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.projectList = new ArrayList<>();
-    }
-
-    public User addProject(Document project){
-        projectList.add(project);
-        return this;
     }
 
     public String getPassword() {
@@ -40,13 +28,6 @@ public class User {
                 '}';
     }
 
-    public List<Document> getProjectList() {
-        return projectList;
-    }
-
-    public void setProjectList(List<Document> projectList) {
-        this.projectList = projectList;
-    }
 
     public String getEmail() {
         return email;

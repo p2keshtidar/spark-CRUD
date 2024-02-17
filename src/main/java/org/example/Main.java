@@ -13,7 +13,7 @@ public class Main {
 
         MongoDBConnectionHandlerImpl mongoDBConnection = new MongoDBConnectionHandlerImpl();
 
-        RESTHandler restHandler = new RESTHandler(8080, mongoDBConnection);
+        RESTHandler restHandler = new RESTHandler(8080);
 
     }
 
